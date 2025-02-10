@@ -1,0 +1,430 @@
+<!--   FILE : home_page.html
+       @IT Lecturer: Thay Vu Duy Linh
+       Craetor : Chau Thai - B2005731, thaib2005731@student.ctu.edu.vn
+       @Created : 16 - Nov - 2022
+       
+       Tai lieu tham khao :
+       + https://www.w3schools.com/
+       + https://stackoverflow.com/
+       + Tailieu3 - Jon Duckett, 2014- JavaScript and JQuery.Interactive Front-End Web Development
+       + Tailieu2--2017__Web Design with HTML & CSS3 - Comprehensive, 8 edition.pdf
+       + Tailieu1-2018-Learning Web Design _ A Beginner’s Guide to HTML, CSS, JavaScript, and Web Graphics.pdf
+       + https://css-tricks.com/
+       + Giao trinh CT188 CTU
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icon trang web -->
+    <link
+      rel="shortcut icon"
+      type="img/png"
+      href="assets/img/icon/favicon.webp"
+    />
+    <!-- css custom -->
+    <link rel="stylesheet" href="assets/css/home_page.css" />
+    <link rel="stylesheet" href="assets/css/home_res.css" />
+    <!-- font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/9df639a5e3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Cake shop</title>
+  </head>
+  <body>
+    <!-- PAGE WRAPPER  -->
+    <section id="page">
+      <!-- HEADER AREA-->
+      <header class="page__header">
+        <!-- banner -->
+        <div class="header__banner">
+          <!-- banner social icon left -->
+          <div class="banner__social-icon">
+            <a class="icon__link" href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a class="icon__link" href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a class="icon__link" href="https://twitter.com/"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </div>
+          <!-- banner social logo image middle -->
+          <div class="banner__logo">
+            <a class="logo__link" href="home_page.html"
+              ><img src="assets/img/icon/Logo.webp" alt=""
+            /></a>
+          </div>
+          <!-- banner info right -->
+          <div class="banner__info">
+            <a onclick="showSearch()"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+            <div class="user__account">
+              <a href="login_page.html"><i class="fa-regular fa-user"></i></a>
+            </div>
+            <!-- shopping cart -->
+            <div class="shopping__cart">
+              <p class="no__order-item">0</p>
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="header__form-search">
+          <form id="formID" action="#">
+            <input type="search" placeholder="Search keyword" />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        <!-- navigation -->
+        <div class="header__nav">
+          <!-- nav for desktop display -->
+          <nav class="header__nav--pc">
+            <!-- nav links -->
+            <a class="nav__link" href="index.html">Home</a>
+            <a class="nav__link" href="cakes_page.html">Cakes</a>
+            <a class="nav__link" href="about_page.html">About</a>
+            <a class="nav__link" href="blog_page.html">BLOG</a>
+            <a class="nav__link" href="contact_page.html">Contact</a>
+          </nav>
+          <!-- nav for width <= 768px -->
+          <nav class="header__nav--respon">
+            <div class="menu__btn">
+              <a onclick="showMenu()">
+                <span>MENU</span>
+                <i class="fa-solid fa-bars"></i>
+              </a>
+            </div>
+            <div id="menuBTN" class="menu__dropdown">
+              <a class="dropdown__link" href="home_page.html">Home</a>
+              <a class="dropdown__link" href="cakes_page.html">Cakes</a>
+              <a class="dropdown__link" href="about_page.html">About</a>
+              <a class="dropdown__link" href="blog_page.html">Blog</a>
+              <a class="dropdown__link" href="contact_page.html">Contact</a>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- END HEADER-->
+      <!-- MAIN AREA-->
+      <main class="page__main">
+        <section class="slide__section">
+          <div class="slide__caption">
+            <div class="slide__animate">
+              <h1 class="slide__title">Healthy Made Delicious Cake</h1>
+              <a href="cakes_page.html" class="slide__btn">ORDER NOW</a>
+            </div>
+          </div>
+        </section>
+        <div class="container">
+          <section class="about__section">
+            <div class="about__caption">
+              <h2>
+                This is Schilers. Awesome Food Theme. Purchase it and eat
+                Burgers.
+              </h2>
+            </div>
+            <div class="about__content">
+              <div class="content__desc">
+                <h2>
+                  This is Schilers. Awesome Food Theme. <br />
+                  Purchase it and eat Burgers.
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor dunt ut labore et dolore magna aliqua.Ut
+                  enim ad minim veniam, quis nostrud exercita tion ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  dolor in reprehen derit in voluptate velit esse cillum.
+                </p>
+                <p>
+                  Consectetur adipiscing elit, sed do eiusmod tempor dunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                  nostrud exercita tion ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat. Duis aute dolor in reprehen derit in
+                  voluptate velit esse c illum.
+                </p>
+              </div>
+              <div class="content__img">
+                <img src="assets/img/home-img/about_img.webp" alt="About img" />
+              </div>
+            </div>
+          </section>
+          <section class="card__section">
+            <div class="card__item">
+              <div class="group__layer">
+                <img
+                  class="card__img--top"
+                  src="assets/img/home-img/carousel_img_1.webp"
+                  alt=""
+                />
+                <a href="" hidden class="add__cart">Add to cart</a>
+              </div>
+              <div class="card__body">
+                <p class="item__id" hidden>001</p>
+                <a href="#" class="card__title">Sweet Suprise</a>
+                <span class="card__price">46000</span>
+              </div>
+            </div>
+            <div class="card__item">
+              <div class="group__layer">
+                <img
+                  class="card__img--top"
+                  src="assets/img/home-img/carousel_img_2.webp"
+                  alt=""
+                />
+                <a href="" hidden class="add__cart">Add to cart</a>
+              </div>
+              <div class="card__body">
+                <p class="item__id" hidden>002</p>
+                <a href="#" class="card__title">Sweet Suprise</a>
+                <span class="card__price">63000</span>
+              </div>
+            </div>
+            <div class="card__item">
+              <div class="group__layer">
+                <img
+                  class="card__img--top"
+                  src="assets/img/home-img/carousel_img_3.webp"
+                  alt=""
+                />
+                <a href="" hidden class="add__cart">Add to cart</a>
+              </div>
+              <div class="card__body">
+                <p class="item__id" hidden>003</p>
+                <a href="#" class="card__title">Sweet Suprise</a>
+                <span class="card__price">97000</span>
+              </div>
+            </div>
+          </section>
+          <section class="video__section">
+            <div class="icon__play">
+              <a href="https://www.youtube.com/watch?v=up68UAfH0d0">
+                <i class="fa-regular fa-circle-play"></i>
+              </a>
+            </div>
+          </section>
+          <section class="customer__section">
+            <div class="customer__caption">
+              <h2>Food Lover's Say</h2>
+            </div>
+            <div class="customer__group">
+              <div class="customer__item">
+                <div class="customer__evaluate">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="customer__comment">
+                  <p>
+                    "Consectetur adipiscing elit, sed do eiusmod tempor dunt
+                    ulter labore et dolore magna.
+                  </p>
+                </div>
+                <div class="customer__info">
+                  <img
+                    class="customer__img"
+                    src="assets/img/home-img/customer-1.webp"
+                    alt=""
+                  />
+                  <p class="customer__name">Wilma Mumduya</p>
+                </div>
+              </div>
+              <div class="customer__item">
+                <div class="customer__evaluate">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="customer__comment">
+                  <p>
+                    "Consectetur adipiscing elit, sed do eiusmod tempor dunt
+                    ulter labore et dolore magna.
+                  </p>
+                </div>
+                <div class="customer__info">
+                  <img
+                    class="customer__img"
+                    src="assets/img/home-img/customer-2.webp"
+                    alt=""
+                  />
+                  <p class="customer__name">Wilma Mumduya</p>
+                </div>
+              </div>
+              <div class="customer__item">
+                <div class="customer__evaluate">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="customer__comment">
+                  <p>
+                    "Consectetur adipiscing elit, sed do eiusmod tempor dunt
+                    ulter labore et dolore magna.
+                  </p>
+                </div>
+                <div class="customer__info">
+                  <img
+                    class="customer__img"
+                    src="assets/img/home-img/customer-3.webp"
+                    alt=""
+                  />
+                  <p class="customer__name">Wilma Mumduya</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="blog__section">
+            <div class="blog__section--top">
+              <h2>Our Blog</h2>
+              <a href="#">
+                <button>more blog</button>
+              </a>
+            </div>
+            <div class="blog__section--end">
+              <div class="blog__item">
+                <img src="assets/img/home-img/blog__images_1.webp" alt="" />
+                <div class="blog__content">
+                  <h3>
+                    Tomato, black olive, feta & anchovy tart ulla mco laboris
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercita tion ullamco
+                    laboris nisi ut aliquip.
+                  </p>
+                  <div class="blog__btn">
+                    <a href="#">LEARN MORE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="blog__item">
+                <img src="assets/img/home-img/blog__images_2.webp" alt="" />
+                <div class="blog__content">
+                  <h3>
+                    Tomato, black olive, feta & anchovy tart ulla mco laboris
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercita tion ullamco
+                    laboris nisi ut aliquip.
+                  </p>
+                  <div class="blog__btn">
+                    <a href="#">LEARN MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="contact__section">
+            <div class="contact__caption">
+              <h2>Follow us on Instagram</h2>
+              <div class="contact__btn">
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Cakeshop</span>
+                </a>
+              </div>
+            </div>
+            <div class="contact__img-group">
+              <img src="assets/img/home-img/contact__img-1.webp" alt="" />
+              <img src="assets/img/home-img/contact__img-2.webp" alt="" />
+              <img src="assets/img/home-img/contact__img-3.webp" alt="" />
+              <img src="assets/img/home-img/contact__img-4.webp" alt="" />
+            </div>
+          </section>
+        </div>
+      </main>
+      <!--END MAIN-->
+      <footer class="page__footer">
+        <section class="footer__menu">
+          <div class="footer__img--logo">
+            <img src="assets/img/icon/Logo.webp" alt="" />
+          </div>
+          <nav class="header__nav--pc">
+            <a class="nav__link" href="home_page.html">Home</a>
+            <a class="nav__link" href="cakes_page.html">Cakes</a>
+            <a class="nav__link" href="about_page.html">About</a>
+            <a class="nav__link" href="blog_page.html">Blog</a>
+            <a class="nav__link" href="contact_page.html">Contact</a>
+          </nav>
+        </section>
+        <section class="footer__contact--info">
+          <div class="contact--info-left">
+            <div class="contact__des">
+              <p>
+                Consectetur adipiscing elit, sed do eiusmod tempor dunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercita tion ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </p>
+            </div>
+            <div class="contact__social">
+              <div class="social__item">
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+              </div>
+              <div class="social__item">
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <span>Facebook</span>
+                </a>
+              </div>
+              <div class="social__item">
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                  <span>Twitter</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact--info-middle">
+            <img src="assets/img/home-img/location.svg" alt="" />
+            <h4>Location</h4>
+            <p>4736 Poe Lane, HOT SPRINGS, Montana-59845</p>
+          </div>
+          <div class="contact--info-right">
+            <img src="assets/img/home-img/phone.svg" alt="" />
+            <h4>Contact</h4>
+            <a href="">913-473-7000</a>
+            <p>contact@cakeshop.com</p>
+          </div>
+        </section>
+        <section class="footer__license">
+          <p>
+            Copyright ©2022 All rights reserved <br />
+            This template is made with <i class="fa-solid fa-heart"></i> by
+            <a href="#">Group 10</a>
+          </p>
+        </section>
+      </footer>
+    </section>
+    <!-- SCRIPT -->
+    <script src="../assets/js/home_page.js"></script>
+    <script src="../assets/js/cake_page.js"></script>
+    <script>
+      const prices = document.querySelectorAll(".card__price");
+      prices.forEach((item) => {
+        item.innerText = Number(item.innerText).toLocaleString("de-DE", {
+          style: "currency",
+          currency: "VND",
+        });
+      });
+      window.onload = loadShoppingCart;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,374 @@
+<!--   FILE : blog_page.html
+       @IT Lecturer: Thay Vu Duy Linh
+       Craetor : Chau Thai - B2005731, thaib2005731@student.ctu.edu.vn
+       @Created : 16 - Nov - 2022  
+
+      Tai lieu tham khao :
+       + https://www.w3schools.com/
+       + https://stackoverflow.com/
+       + Tailieu3 - Jon Duckett, 2014- JavaScript and JQuery.Interactive Front-End Web Development
+       + Tailieu2--2017__Web Design with HTML & CSS3 - Comprehensive, 8 edition.pdf
+       + Tailieu1-2018-Learning Web Design _ A Beginner’s Guide to HTML, CSS, JavaScript, and Web Graphics.pdf
+       + https://css-tricks.com/
+       + Giao trinh CT188 CTU
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- icon trang web -->
+  <link rel="shortcut icon" type="img/png" href="assets/img/icon/favicon.webp">
+  <!-- css custom-->
+  <link rel="stylesheet" href="assets/css/blog_page.css">
+  <link rel="stylesheet" href="assets/css/blog_respon.css">
+  <!-- font Awesome -->
+  <script src="https://kit.fontawesome.com/9df639a5e3.js" crossorigin="anonymous"></script>
+  <title>Blog page</title>
+</head>
+
+<body>
+  <section id="page">
+    <header class="page__header">
+      <!-- banner -->
+      <div class="header__banner">
+        <!-- banner social icon left -->
+        <div class="banner__social-icon">
+          <a class="icon__link" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a class="icon__link" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a class="icon__link" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <!-- banner social logo image middle -->
+        <div class="banner__logo">
+          <a class="logo__link" href="home_page.html"><img src="assets/img/icon/Logo.webp" alt=""></a>
+        </div>
+        <!-- banner info right -->
+        <div class="banner__info">
+          <a onclick="showSearch()"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <div class="user__account">
+            <a href="login_page.html"><i class="fa-regular fa-user"></i></a>
+          </div>
+          <!-- shopping cart -->
+          <div class="shopping__cart">
+            <p class="no__order-item">0</p>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="header__form-search">
+        <form id="formID" action="#">
+          <input type="search" placeholder="Search keyword">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <!-- navigation -->
+      <div class="header__nav">
+        <!-- large devide width -->
+        <nav class="header__nav--pc">
+          <a class="nav__link" href="home_page.html">Home</a>
+          <a class="nav__link" href="cakes_page.html">Cakes</a>
+          <a class="nav__link" href="about_page.html">About</a>
+          <a class="nav__link" href="blog_page.html">BLOG</a>
+          <a class="nav__link" href="contact_page.html">Contact</a>
+        </nav>
+        <!-- small device width -->
+        <nav class="header__nav--respon">
+          <!-- menu button -->
+          <div class="menu__btn">
+            <!-- click to show menu content dropdown -->
+            <a onclick="showMenu()">
+              <span>MENU</span>
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+          <!-- menu content -->
+          <div id="menuBTN" class="menu__dropdown">
+            <a class="dropdown__link" href="home_page.html">Home</a>
+            <a class="dropdown__link" href="cakes_page.html">Cakes</a>
+            <a class="dropdown__link" href="about_page.html">About</a>
+            <a class="dropdown__link" href="blog_page.html">Blog</a>
+            <a class="dropdown__link" href="contact_page.html">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main class="page__main">
+      <!-- SLIDE -->
+      <section class="slide__section">
+        <div class="slide__caption">
+          <div class="slide__animate">
+            <h1 class="slide__title">Blog</h1>
+          </div>
+        </div>
+      </section>
+      <!-- CONTAINER TO CENTER CONTENT -->
+      <div class="container">
+        <!-- BLOG MAIN CONTENT -->
+        <section class="blog__main-content">
+          <!-- BLOG CONTENT LEFT -->
+          <div class="blog__left-content">
+            <!-- BLOG CARD ITEM 1 -->
+            <div class="blog__card-item">
+              <img src="assets/img/blog__img1.jpg" alt="Blog img 1">
+              <div class="card__body">
+                <div class="blog__item-date">
+                  <h3>15</h3>
+                  <p>Jan</p>
+                </div>
+                <h2>Google inks pact for new 35-storey office</h2>
+                <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it
+                  first without heaven in place seed it second morning saying.</p>
+                <div class="blog__info-link">
+                  <a href="">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>Travel, Lifestyle</span>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-comment" aria-hidden="true"></i>
+                    <span>03 Comments</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- BLOG CARD ITEM 2 -->
+            <div class="blog__card-item">
+              <img src="assets/img/blog__img2.jpg" alt="Blog img 1">
+              <div class="card__body">
+                <div class="blog__item-date">
+                  <h3>15</h3>
+                  <p>Jan</p>
+                </div>
+                <h2>Google inks pact for new 35-storey office</h2>
+                <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it
+                  first without heaven in place seed it second morning saying.</p>
+                <div class="blog__info-link">
+                  <a href="">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>Travel, Lifestyle</span>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-comment" aria-hidden="true"></i>
+                    <span>03 Comments</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- BLOG CARD ITEM 3 -->
+            <div class="blog__card-item">
+              <img src="assets/img/blog__img3.jpg" alt="Blog img 1">
+              <div class="card__body">
+                <div class="blog__item-date">
+                  <h3>15</h3>
+                  <p>Jan</p>
+                </div>
+                <h2>Google inks pact for new 35-storey office</h2>
+                <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it
+                  first without heaven in place seed it second morning saying.</p>
+                <div class="blog__info-link">
+                  <a href="">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>Travel, Lifestyle</span>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-comment" aria-hidden="true"></i>
+                    <span>03 Comments</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- BLOG CARD ITEM 4 -->
+            <div class="blog__card-item">
+              <img src="assets/img/blog__img4.jpg" alt="Blog img 1">
+              <div class="card__body">
+                <div class="blog__item-date">
+                  <h3>15</h3>
+                  <p>Jan</p>
+                </div>
+                <h2>Google inks pact for new 35-storey office</h2>
+                <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it
+                  first without heaven in place seed it second morning saying.</p>
+                <div class="blog__info-link">
+                  <a href="">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>Travel, Lifestyle</span>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-comment" aria-hidden="true"></i>
+                    <span>03 Comments</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- BLOG SIDEBAR RIGHT -->
+          <div class="blog__sidebar--right">
+            <div class="form__search">
+              <form action="#" method="post">
+                <input type="text" name="search" id="search" placeholder="Search Keyword">
+                <button type="submit">Search</button>
+              </form>
+            </div>
+            <div class="sidebar__category">
+              <div class="category__title">
+                <h4>Category</h4>
+              </div>
+              <div class="category__list-item">
+                <a href="">Resaurant food(37)</a>
+                <a href="">Travel news(10)</a>
+                <a href="">Modern technology(03)</a>
+                <a href="">Product(11)</a>
+                <a href="">Inspiration(21)</a>
+                <a href="">Health Care (21)09</a>
+              </div>
+            </div>
+            <div class="sidebar__recent-post">
+              <div class="category__title">
+                <h4>Recent Post</h4>
+              </div>
+              <div class="recent-post__group">
+                <div class="recent-post__item">
+                  <img src="assets/img/recent-post1.webp" alt="">
+                  <div class="post__item-des">
+                    <h3>From life was you fish...</h3>
+                    <p>January 12, 2019</p>
+                  </div>
+                </div>
+                <div class="recent-post__item">
+                  <img src="assets/img/recent-post2.webp" alt="">
+                  <div class="post__item-des">
+                    <h3>The Amazing Hubble</h3>
+                    <p>02 Hours ago</p>
+                  </div>
+                </div>
+                <div class="recent-post__item">
+                  <img src="assets/img/recent-post3.webp" alt="">
+                  <div class="post__item-des">
+                    <h3>Astronomy Or Astrology.</h3>
+                    <p>03 Hours ago</p>
+                  </div>
+                </div>
+                <div class="recent-post__item">
+                  <img src="assets/img/recent-post4.webp" alt="">
+                  <div class="post__item-des">
+                    <h3>Asteroids telescope</h3>
+                    <p>01 Hours ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar__tag-clouds">
+              <div class="category__title">
+                <h4>Tag Clouds</h4>
+              </div>
+              <div class="group__btn">
+                <a href="#">Project</a>
+                <a href="#">love</a>
+                <a href="#">technology</a>
+                <a href="#">travel</a>
+                <a href="#">retaurant</a>
+                <a href="#">life style</a>
+                <a href="#">design</a>
+                <a href="#">illustration</a>
+              </div>
+            </div>
+            <div class="sidebar__instagram-feeds">
+              <div class="category__title">
+                <h4>Instagram Feeds</h4>
+              </div>
+              <div class="instagram__img-group">
+                <img src="assets/img/istaram1.webp" alt="">
+                <img src="assets/img/istaram2.webp" alt="">
+                <img src="assets/img/istaram3.webp" alt="">
+                <img src="assets/img/istaram4.webp" alt="">
+                <img src="assets/img/istaram5.webp" alt="">
+                <img src="assets/img/istaram6.webp" alt="">
+              </div>
+            </div>
+            <div class="sidebar__newsletter">
+              <div class="category__title">
+                <h4>Newsletter</h4>
+              </div>
+              <form class="newsletter__form" action="#" method="post">
+                <input type="email" name="email" id="Email" placeholder="Enter email">
+                <button type="submit">SUBSCRIBE</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="page__footer">
+      <!-- footer menu -->
+      <section class="footer__menu">
+        <div class="footer__img--logo">
+          <img src="assets/img/icon/Logo.webp" alt="">
+        </div>
+        <nav class="header__nav--pc">
+          <a class="nav__link" href="home_page.html">Home</a>
+          <a class="nav__link" href="cakes_page.html">Cakes</a>
+          <a class="nav__link" href="about_page.html">About</a>
+          <a class="nav__link" href="blog_page.html">Blog</a>
+          <a class="nav__link" href="contact_page.html">Contact</a>
+        </nav>
+      </section>
+      <!-- footer contact info -->
+      <section class="footer__contact--info">
+        <!-- left info -->
+        <div class="contact--info-left">
+          <div class="contact__des">
+            <p>Consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="contact__social">
+            <div class="social__item">
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
+            </div>
+            <div class="social__item">
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+                <span>Facebook</span>
+              </a>
+            </div>
+            <div class="social__item">
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+                <span>Twitter</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- middle info -->
+        <div class="contact--info-middle">
+          <img src="assets/img/home-img/location.svg" alt="">
+          <h4>Location</h4>
+          <p>4736 Poe Lane, HOT SPRINGS, Montana-59845</p>
+        </div>
+        <!-- right info -->
+        <div class="contact--info-right">
+          <img src="assets/img/home-img/phone.svg" alt="">
+          <h4>Contact</h4>
+          <a href="">913-473-7000</a>
+          <p>contact@cakeshop.com</p>
+        </div>
+      </section>
+      <!-- footer coppy right -->
+      <section class="footer__license">
+        <p>Copyright ©2022 All rights reserved <br> This template is made with <i class="fa-solid fa-heart"></i> by <a href="#">Group 10</a></p>
+      </section>
+    </footer>
+  </section>
+  <!-- script file home.js -->
+  <script src="assets/js/home_page.js"></script>
+  <script src="assets/js/cake_page.js"></script>
+  <script>
+    window.onload = loadShoppingCart;
+  </script>
+</body>
+
+</html>
