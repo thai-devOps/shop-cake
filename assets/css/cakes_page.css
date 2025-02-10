@@ -221,6 +221,14 @@ section#page{
   text-shadow: 0 1px 1px rgb(255 255 255 / 75%);
   cursor: pointer;
 }
+
+.menu__btn button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 .menu__btn span {
   line-height: 1.188em;
   color: #fff;

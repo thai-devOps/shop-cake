@@ -1,4 +1,4 @@
-<!--   FILE : home_page.html
+<!--   FILE : index.html
        @IT Lecturer: Thay Vu Duy Linh
        Craetor : Chau Thai - B2005731, thaib2005731@student.ctu.edu.vn
        @Created : 16 - Nov - 2022
@@ -55,7 +55,7 @@
           </div>
           <!-- banner social logo image middle -->
           <div class="banner__logo">
-            <a class="logo__link" href="home_page.html"
+            <a class="logo__link" href="index.html"
               ><img src="assets/img/icon/Logo.webp" alt=""
             /></a>
           </div>
@@ -75,7 +75,7 @@
           </div>
         </div>
         <div class="header__form-search">
-          <form id="formID" action="#">
+          <form id="formID" class="" action="#">
             <input type="search" placeholder="Search keyword" />
             <button type="submit">Search</button>
           </form>
@@ -94,13 +94,13 @@
           <!-- nav for width <= 768px -->
           <nav class="header__nav--respon">
             <div class="menu__btn">
-              <a onclick="showMenu()">
+              <button onclick="showMenu()">
                 <span>MENU</span>
                 <i class="fa-solid fa-bars"></i>
-              </a>
+              </button>
             </div>
             <div id="menuBTN" class="menu__dropdown">
-              <a class="dropdown__link" href="home_page.html">Home</a>
+              <a class="dropdown__link" href="index.html">Home</a>
               <a class="dropdown__link" href="cakes_page.html">Cakes</a>
               <a class="dropdown__link" href="about_page.html">About</a>
               <a class="dropdown__link" href="blog_page.html">Blog</a>
@@ -354,7 +354,7 @@
             <img src="assets/img/icon/Logo.webp" alt="" />
           </div>
           <nav class="header__nav--pc">
-            <a class="nav__link" href="home_page.html">Home</a>
+            <a class="nav__link" href="index.html">Home</a>
             <a class="nav__link" href="cakes_page.html">Cakes</a>
             <a class="nav__link" href="about_page.html">About</a>
             <a class="nav__link" href="blog_page.html">Blog</a>
@@ -414,8 +414,8 @@
       </footer>
     </section>
     <!-- SCRIPT -->
-    <script src="../assets/js/home_page.js"></script>
-    <script src="../assets/js/cake_page.js"></script>
+    <script src="assets/js/home_page.js"></script>
+    <script src="assets/js/cake_page.js"></script>
     <script>
       const prices = document.querySelectorAll(".card__price");
       prices.forEach((item) => {
